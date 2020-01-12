@@ -5,9 +5,8 @@
   padding: 1rem 0;
   letter-spacing: .1rem;
   font-size: 1.2rem;
-  text-transform: uppercase; }
-  .btn:hover {
-    transition: ease-in-out .5s; }
+  text-transform: uppercase;
+  transition: .2s; }
 
 .hide {
   display: none; }
@@ -15,8 +14,16 @@
 .text-center {
   text-align: center; }
 
-.default-radius {
+.all-radius {
   border-radius: 8px; }
+
+.left-radius {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; }
+
+.right-radius {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
 
 /* The switch - the box around the slider */
 .switch-container {
