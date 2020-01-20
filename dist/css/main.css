@@ -210,10 +210,8 @@ ul {
   .main-container {
     background: url(/dist/img/bg-top.svg) no-repeat top -50px right -150px, url(/dist/img/bg-bottom.svg) no-repeat bottom left -100px;
     background-color: #f6f7fe; }
-    .main-container .packages-container .package {
-      max-width: 20rem; }
-      .main-container .packages-container .package ul li {
-        padding: 1.5rem 2.5rem; }
+    .main-container .packages-container .package ul li {
+      padding: 1.5rem 2.5rem; }
   .price .anually,
   .price .monthly {
     font-size: 3rem; } }
