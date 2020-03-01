@@ -1,0 +1,108 @@
+@import './variables';
+@import './utilities';
+
+// Mobile 
+@media(max-width : 500px){ 
+  .main-container {
+    background: url(../img/bg-top.svg) no-repeat top -40px right -185px, url(../img/bg-bottom.svg) no-repeat bottom left -100px;
+    background-color: lighten($main-color-light, 19%);
+    padding: 2rem;
+
+    
+  .packages-container {
+    flex-direction: column;
+    margin: 1rem 0 2rem 0;
+
+    .package {
+      width: 85vw;
+      margin: 2rem 0;
+
+      .price {
+        font-size: 4rem;
+      }
+     }
+    }
+  }
+}
+
+// Mobile Landscape
+@media(max-height : 580px) {
+  .main-container {
+    background: url(../img/bg-top.svg) no-repeat top -50px right -150px, url(../img/bg-bottom.svg) no-repeat bottom left -100px;
+    background-color: lighten($main-color-light, 19%);
+    padding: 2rem;
+
+    .plan-swith-container {
+      padding: 0 1rem 1rem 0;
+    }
+
+    .packages-container{
+      .package {
+        min-width: 0;
+        ul li {
+          padding: 1.5rem 2.5rem;
+        }
+      }
+    }
+  }
+
+  .price {
+    .anually,
+    .monthly {
+      font-size: 3rem;
+    }
+  }
+}
+
+// Ipad portrait
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+  .packages-container {
+    flex-direction: column;
+
+    .package {
+      width: 65vw;
+       margin: 2rem 0;
+     }
+  }
+}
+
+// Ipad landscape
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+  .main-container {
+    max-width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 5rem 2rem;
+    background: url(../img/bg-top.svg) no-repeat top right -150px, url(../img/bg-bottom.svg) no-repeat bottom left;
+    background-color: lighten($main-color-light, 19%);
+  }
+
+  .price {
+    .anually,
+    .monthly {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+// Desktops
+@media(min-width: 1025px)
+and (max-width : 1280px) {
+  main {
+    margin-top: 4rem;
+  }
+}
+
+// Bigger Screens
+@media(min-width : 1282px) {
+  main {
+    margin-top: 10rem;
+  }
+}
+

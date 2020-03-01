@@ -1,0 +1,32 @@
+    .btn {
+      margin-top: 2rem;
+      text-decoration: none;
+      border: 1px solid transparent;
+      padding: 1rem 0;
+      letter-spacing: .1rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      transition: all .5s;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .all-radius {
+      border-radius: $base-radius;
+    }
+
+    .left-radius {
+      border-top-left-radius: $base-radius;
+      border-bottom-left-radius: $base-radius;
+    }
+
+    .right-radius {
+      border-top-right-radius: $base-radius;
+      border-bottom-right-radius: $base-radius;
+    }

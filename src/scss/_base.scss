@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'utilities';
+@import 'toggle';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 7rem;
+  background: url(../img/bg-top.svg) no-repeat top -20px right -40px, url(../img/bg-bottom.svg) no-repeat bottom left;
+  background-color: lighten($main-color-light, 19%);
+  max-width: 1225px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 10px 27px 35px -3px rgba($medium, .4);
+
+  .main-heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: $medium;
+  }
+
+  .plan-swith-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 3rem 0;
+    font-size: 1.5rem;
+
+    div {
+      padding: 0 2rem;
+    }
+
+    .-element,
+    .right-element {
+      color: $light;
+    }
+  }
+}

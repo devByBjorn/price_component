@@ -1,0 +1,106 @@
+@import './variables';
+@import './utilities';
+
+.packages-container {
+  position: relative;
+  display:inherit;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 0 5rem 0;
+
+  .package {
+    display: flex;
+    flex-direction: column;
+    min-width: 30rem;
+    box-shadow: 10px 27px 35px -3px rgba($medium, .2);
+
+    .package-heading {
+      font-size: 1.5rem;
+      font-style: extra bold;
+      padding: 1rem 0;
+      letter-spacing: .05rem;
+    }
+
+    .price {
+      display: flex;
+      font-size: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2rem;
+
+      span {
+        display: block;
+        font-size: 3rem;
+        margin-right: .5rem;
+      }
+    }
+
+    ul li {
+      font-size: 1.5rem;
+      padding: 1.5rem 5rem;
+    }
+  }
+
+
+  .sub-package {
+    padding: 3rem 4rem;
+    background-color: #fff;
+    color: $medium;
+
+    .price {
+      color: $dark
+    }
+
+    ul li {
+      border-top: 1px solid darken($very-light, 3%);
+
+      &:last-child {
+        border-bottom: 1px solid darken($very-light, 3%);
+      }
+    }
+
+    .btn {
+      color: $white-color;
+      background: rgb(163,168,240);
+      background: linear-gradient(171deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+
+      &:hover {
+        color: $dark;
+        border-color: $light;
+        background: transparent;
+      }
+    }
+  }
+
+  .main-package {
+    padding: 5rem 4rem;
+    background: rgb(163,168,240);
+    background: linear-gradient(171deg, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+    color: #f4f4f4;
+
+      .price {
+        color: $white-color;
+      }
+
+      ul li {
+      border-top: 1px solid rgba($light, .5);
+
+      &:last-child {
+        border-bottom: 1px solid rgba($light, .5);
+      }
+    }
+
+    .btn {
+      color: darken(rgba(163,168,240,1), 10%);
+      background: $white-color;
+      
+      &:hover {
+        border-color: $dark;
+        color: $white-color;
+        background: transparent;
+      }
+    }
+  }
+}
