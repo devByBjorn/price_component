@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "liver-server dist/",
+    "serve": "live-server dist/",
     "build": "webpack -w",
     "dev-server": "webpack-dev-server",
     "sass": "node-sass -w src/scss -o dist/css/ --recursive"

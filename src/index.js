@@ -2,7 +2,6 @@
 import { hidePrice } from './js/hideDisplayPrice'
 import { addHighlight, removeHighlight } from './js/addOrRemoveHighlight'
 import togglePrice from './js/togglePrice'
-import './scss/style.scss'
 
 // Window load - make sure that only one of the price plans are showed on load
 (function loadPrice() {
